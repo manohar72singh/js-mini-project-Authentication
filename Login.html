@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/solid.min.css" integrity="sha512-qzgHTQ60z8RJitD5a28/c47in6WlHGuyRvMusdnuWWBB6fZ0DWG/KyfchGSBlLVeqAz+1LzNq+gGZkCSHnSd3g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./login.css"/>
+    <title>Home</title>
+</head>
+<body>
+    
+    
+        <!-- NAVBAR FORM -->
+
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title">
+                Home
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <div class="nav-links">
+            <a href="#" onclick="loginClick();">Login</a>
+            <a href="#" onclick="signupClick();">SignUp</a>
+        </div>
+    </div>
+
+        
+        <!-- LOGIN FORM -->
+
+    <div class="login-box">
+        <h2>Login</h2>
+        <form action="#">
+            <div class="user-box">
+                <input type="text" id ="loginemail"  required >
+                <label>Email</label>
+            </div>
+            <div class="user-box">
+                <input type="password" id="loginpassword" required >
+                <label>Password</label>
+            </div>
+            <!-- <span>Do You have Account ? <a href="Login.html">Login</a></span> -->
+            <a href="#" onclick="loginValidate()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Submit
+            </a>
+        </form>
+    </div>
+
+
+        <!-- SIGNUP FORM  -->
+
+        <div class="signup-box">
+            <h2>SignUp</h2>
+            <form action="#">
+                <div class="user-box">
+                    <input type="text" id="name" required>
+                    <label>Name</label>
+                </div>
+                <div class="user-box">
+                    <input type="text" id="signupemail" required>
+                    <label>Email</label>
+                </div>
+                <div class="user-box">
+                    <input type="password" id="signupPassword" required>
+                    <label>Password</label>
+                </div>
+                <div class="user-box">
+                    <input type="password" id="confirmpassword" required>
+                    <label>Confirm Password</label>
+                </div>
+                <div class=""></div>
+                <a href="#" onclick="signupValidate()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Submit
+                </a>
+            </form>
+        </div>
+<script type="text/javascript" src="./authentication.js"></script>
+</body>
+</html>

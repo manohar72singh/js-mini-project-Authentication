@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/solid.min.css" integrity="sha512-qzgHTQ60z8RJitD5a28/c47in6WlHGuyRvMusdnuWWBB6fZ0DWG/KyfchGSBlLVeqAz+1LzNq+gGZkCSHnSd3g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <title>Home</title>
+    
+</head>
+<body>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title">
+                Home
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <div class="nav-links">
+            <a href="#" id="h1">  </a>
+            <a href="#" onclick="logout();"> <i class="fa-solid fa-arrow-right-from-bracket"> </i> Logout </a>
+        </div>
+    </div>
+    
+    <div class="card">
+        <div class="picture">
+            <img class="img-fluid" src="./image/mypic.jpg">
+        </div>
+        <div class="main-content">
+            <h3 class="name">Manohar Singh</h3>
+            <span class="title""> Design & Devloped By Manohar Singh</span>
+            <h4 class="title">Full Stack Web Devloper </h4>
+        </div>
+        <ul class="social">
+            <li><a href="https://www.linkedin.com/in/manohar-singh-66219323b/"> <i class="fa-brands fa-linkedin"> </i> </a></li>
+            <li><a href="https://github.com/manohar72singh"> <i class="fa-brands fa-github"> </i> </a></li>
+            <li><a href="https://www.facebook.com/manohar72singh/"> <i class="fa-brands fa-facebook"> </i> </a></li>
+            <li><a href="https://www.instagram.com/manoharkumarsingh8900/"> <i class="fa-brands fa-instagram"> </i> </a></li>
+        </ul>
+        <div class="skills">
+            <h6>Skills</h6>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>React</li>
+                <li>GitHub</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="./authentication.js"></script>
+    <script type="text/javascript">
+        
+        const e = window.localStorage.getItem("email");
+        if(e === null)
+        {
+            location.assign("login.html");
+        }
+        else
+        {
+            document.querySelector("#h1").innerHTML = `<i class="fa-solid fa-user"> </i> ${e}`;
+        }
+    </script>
+</body>
+</html>
