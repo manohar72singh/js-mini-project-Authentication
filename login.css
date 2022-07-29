@@ -90,7 +90,7 @@ body {
         height: 0px;
     }
     .nav > #nav-check:checked ~ .nav-links{
-        height:calc(30vh - 50px);
+        height:calc(30vh - 130px);
         overflow-y: auto;
     }
 }
@@ -397,7 +397,7 @@ body {
         bottom: 100%;
     }
 }
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:600px) {
     .signup-box{
         display: none;
         position: absolute;
